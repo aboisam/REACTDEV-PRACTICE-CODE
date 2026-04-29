@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function Aboi() {
+function UserList() {
   const [users, setUsers] = useState([]);
 
   // useEffect(() => {
@@ -14,9 +14,9 @@ function Aboi() {
   }, []);
   return (
     <div>
-      <h1>Aboi</h1>
-      <ul>{users.map(user => <li key={user.id}>{user.name}</li>)}</ul>
+      <h1>User List</h1>
+      <ul>{users.map(user => <li key={user.id}>{user.name}{user.email}</li>)}</ul>
     </div>
   );
 }
-export default Aboi;
+export default UserList;

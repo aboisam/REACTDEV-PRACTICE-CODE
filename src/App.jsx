@@ -4,11 +4,15 @@ import Counter from "./components/Counter";
 import ThemeToggle from "./components/ThemeToggle";
 import NameInput from "./components/NameInput";
 import ProfileForm from "./components/ProfileForm";
+import UserList from "./components/UserList";
+import PageTitle from "./components/PageTitle";
+import UserProfile from "./components/UserProfile";
 
 function App() {
   let userName = "Usman";
   let X = 5;
   let Y = 30;
+
 
   const products = [
     { id: 1, title: "Laptop", price: 10001, stock: 10, category: "Electronics" },
@@ -18,6 +22,9 @@ function App() {
 
   return (
     <>
+      <UserProfile userId={ 1} />
+      <PageTitle userName="Usman" />
+      <UserList />
       <ProfileForm />
       <NameInput />
       <ThemeToggle />
