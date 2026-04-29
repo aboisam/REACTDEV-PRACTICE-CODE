@@ -7,6 +7,7 @@ import ProfileForm from "./components/ProfileForm";
 import UserList from "./components/UserList";
 import PageTitle from "./components/PageTitle";
 import UserProfile from "./components/UserProfile";
+import CheckForms from "./components/CheckForms";
 
 function App() {
   let userName = "Usman";
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <>
+      <CheckForms />
       <UserProfile userId={ 1} />
       <PageTitle userName="Usman" />
       <UserList />
