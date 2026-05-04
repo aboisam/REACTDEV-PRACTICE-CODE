@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+
 function UserProfile({ userId }) {
     const [user, setUser] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
